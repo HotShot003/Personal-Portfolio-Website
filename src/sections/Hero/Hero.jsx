@@ -9,7 +9,8 @@ import githubDark from "../../assets/github-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
 import CV from "../../assets/cv.pdf";
-
+import leetlight from '../../assets/leetcode-light.svg';
+import leetdark from '../../assets/leetcode-dark.svg';
 import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
@@ -19,7 +20,7 @@ function Hero() {
   const twitterIcon = theme === "light" ? twitterLight : twitterDark;
   const githubIcon = theme === "light" ? githubLight : githubDark;
   const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
-
+  const leet = theme === "light" ? leetlight : leetdark ;
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
@@ -69,10 +70,19 @@ function Hero() {
           >
             <img src={linkedinIcon} alt="LinkedIn profile link" />
           </a>
+
+          <a
+            href="https://leetcode.com/u/HotShotx003/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={leet} alt="Twitter profile link" />
+          </a>
         </span>
         <p className={styles.description}>
           I am passionate about learning new things and exploring more into technologies. I love coding in Python.
         </p>
+        <br />
         <a href={CV} download>
           <button className={styles.hover}>Resume</button>
         </a>

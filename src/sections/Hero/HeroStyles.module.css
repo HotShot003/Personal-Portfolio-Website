@@ -12,27 +12,14 @@
   max-width: 200px;
 }
 
-.colorModeContainer {
-  position: relative;
-}
-
-.colorMode {
-  position: absolute;
-  right: 0;
-  width: 25px;
-  cursor: pointer;
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
 span {
   display: flex;
   gap: 25px;
   justify-content: center;
+}
+
+span a {
+  margin: 0;
 }
 
 span img {
@@ -66,8 +53,35 @@ button:active {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
 
+.colorModeContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colorMode {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+}
+
+.colorMode:hover {
+  cursor: pointer;
+}
+
 .description {
-  max-width: 24ch;
+  max-width: 100%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
 }
 
 @media (min-width: 800px) {
@@ -87,5 +101,9 @@ button:active {
   .hero {
     max-width: 400px;
     width: 400px;
+  }
+
+  .description {
+    max-width: 50%;
   }
 }
