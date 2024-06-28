@@ -13,7 +13,7 @@ function Projects() {
           src={fps}
           link="https://github.com/Ade-mir/company-landing-page-2"
           h3="Fps-Video-Game"
-          p="development of an exciting First-Person Shooter (FPS) game project where I've implemented smart NPC (Non-Player Character) behaviors to enhance the gaming experience."
+          p="First-Person Shooter (FPS) game project where I've implemented smart NPC (Non-Player Character) behaviors to enhance the gaming experience."
         />
         
       </div>
