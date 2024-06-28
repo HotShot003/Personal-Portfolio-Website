@@ -22,6 +22,7 @@ body {
   background-color: var(--background-color);
   display: flex;
   justify-content: center;
+  /* overflow-x: hidden; */
   margin: 0 auto 60px;
 }
 
@@ -74,7 +75,7 @@ p {
   cursor: pointer;
 }
 
-@media (min-width: 800px) {
+@media (width >= 800px) {
   #root {
     gap: 100px;
   }
@@ -92,17 +93,17 @@ p {
   .sectionTitle {
     margin-bottom: 60px;
   }
-}
 
-@media (min-width: 1400px) {
-  #root {
-    gap: 200px;
-  }
-  h1 {
-    font-size: 48px;
-  }
+  @media (width >= 1400px) {
+    #root {
+      gap: 200px;
+    }
+    h1 {
+      font-size: 48px;
+    }
 
-  .sectionTitle {
-    margin-bottom: 75px;
+    .sectionTitle {
+      margin-bottom: 75px;
+    }
   }
 }

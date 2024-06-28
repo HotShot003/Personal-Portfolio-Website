@@ -1,13 +1,16 @@
-/* eslint-disable no-unused-vars */
-import React from "react";
-import styles from "./SkillsStyles.module.css";
-import checkMarkIcon from "../../assets/checkmark-dark.svg";
-import SkillList from "../../common/SkillList";
+import styles from './SkillsStyles.module.css';
+import checkMarkIconDark from '../../assets/checkmark-dark.svg';
+import checkMarkIconLight from '../../assets/checkmark-light.svg';
+import SkillList from '../../common/SkillList';
+import { useTheme } from '../../common/ThemeContext';
+
 function Skills() {
+  const { theme } = useTheme();
+  const checkMarkIcon = theme === 'light' ? checkMarkIconLight : checkMarkIconDark;
+
   return (
     <section id="skills" className={styles.container}>
-      <h1 className="sectionTitle">Skill</h1>
-
+      <h1 className="sectionTitle">Skills</h1>
       <div className={styles.skillList}>
         <SkillList src={checkMarkIcon} skill="HTML" />
         <SkillList src={checkMarkIcon} skill="CSS" />
@@ -17,19 +20,19 @@ function Skills() {
       </div>
       <hr />
       <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="REACT" />
-        <SkillList src={checkMarkIcon} skill="BULMA CSS" />
+        <SkillList src={checkMarkIcon} skill="REACTJS" />
+        <SkillList src={checkMarkIcon} skill="BULMA CSS FRAMEWORK" />
         <SkillList src={checkMarkIcon} skill="SASS" />
-
+    
       </div>
       <hr />
       <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="FRONTEND WEB DEVELOPER" />
-        <SkillList src={checkMarkIcon} skill="GAME DEVELOPER " />
-        <SkillList src={checkMarkIcon} skill="REACT DEVELOPER" />
-
+        <SkillList src={checkMarkIcon} skill="FRONTEND WEB DEVELOPEMENT" />
+        <SkillList src={checkMarkIcon} skill="GAME DEVELOPMENT " />
+        <SkillList src={checkMarkIcon} skill="Git" />
+        <SkillList src={checkMarkIcon} skill="GITHUB" />
+        <SkillList src={checkMarkIcon} skill="MYSQL" />
       </div>
-      <hr />
     </section>
   );
 }

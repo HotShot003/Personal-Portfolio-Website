@@ -23,7 +23,7 @@ span a {
 }
 
 span img {
-  width: 30px;
+  width: 40px;
 }
 
 a {
@@ -82,6 +82,7 @@ button:active {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  align-items: center; /* Center align items */
 }
 
 @media (min-width: 800px) {

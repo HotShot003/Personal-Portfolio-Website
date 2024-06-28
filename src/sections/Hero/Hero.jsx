@@ -43,10 +43,7 @@ function Hero() {
           Padhiyar
         </h1>
         <h2>
-          Pursuing Computer Science and Engineering at Parul University
-          <br /><br />
           | Python | JavaScript | React.js | Frontend Web Development | Game Development
-          <br />
         </h2>
         <span>
           <a
@@ -84,7 +81,7 @@ function Hero() {
         </p>
         <br />
         <a href={CV} download>
-          <button className={styles.hover}>Resume</button>
+          <button className='hover'>Resume</button>
         </a>
       </div>
     </section>
