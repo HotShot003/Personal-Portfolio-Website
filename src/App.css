@@ -19,6 +19,7 @@
 }
 
 body {
+  padding-top: 10px;
   background-color: var(--background-color);
   display: flex;
   justify-content: center;
