@@ -43,11 +43,11 @@ As an intern, I have received mentorship and guidance from experienced industry 
 This mentorship aims to support my growth in web development, providing valuable insights and feedback throughout the project lifecycle.
 
 
-## Live Demo (Update It Soon)
+## Live Demo 
 
 Check out the live demo of my personal portfolio website:
 
-[![Live Demo](https://img.shields.io/badge/LiveDemo%20-%23276DC3.svg?&style=for-the-badge&logo=&logoColor=white)](https://your-live-demo-link.com) 
+[![Live Demo](https://img.shields.io/badge/LiveDemo%20-%23276DC3.svg?&style=for-the-badge&logo=&logoColor=white)]([https://your-live-demo-link.com](https://anuragpadhiyar-portfolio-website03.netlify.app/)) 
 
 ## Contributing
 
