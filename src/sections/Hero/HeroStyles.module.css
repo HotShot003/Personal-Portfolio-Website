@@ -1,3 +1,12 @@
+/* HeroStyles.module.css */
+
+.typicalText {
+  font-weight: bold;
+  font-size: 32px; /* Adjust the font size if needed */
+  line-height: 1.5;
+  transition: all 0.5s ease; /* Smooth transition */
+}
+
 .container {
   display: flex;
   flex-direction: column;

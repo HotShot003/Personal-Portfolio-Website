@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+import React from "react";
+import Typical from "react-typical";
 import styles from "./HeroStyles.module.css";
 import heroImg from "../../assets/mypic.png";
 import sun from "../../assets/sun.svg";
@@ -20,7 +23,8 @@ function Hero() {
   const twitterIcon = theme === "light" ? twitterLight : twitterDark;
   const githubIcon = theme === "light" ? githubLight : githubDark;
   const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
-  const leet = theme === "light" ? leetlight : leetdark ;
+  const leet = theme === "light" ? leetlight : leetdark;
+
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
@@ -38,9 +42,12 @@ function Hero() {
       </div>
       <div className={styles.info}>
         <h1>
-          Anurag
-          <br />
-          Padhiyar
+          <Typical
+            steps={['Anurag', 1500, 'Anurag Padhiyar', 1500]}
+            loop={Infinity}
+            wrapper="span"
+            className={styles.typicalText}
+          />
         </h1>
         <h2>
           | Python | JavaScript | React.js | Frontend Web Development | Game Development
@@ -73,7 +80,7 @@ function Hero() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={leet} alt="Twitter profile link" />
+            <img src={leet} alt="LeetCode profile link" />
           </a>
         </span>
         <p className={styles.description}>

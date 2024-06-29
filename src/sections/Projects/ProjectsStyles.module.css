@@ -4,10 +4,11 @@
   text-align: center;
 
   img {
-    max-width: 250px;
+    margin-bottom: 10px;
+    max-width: 300px;
     align-self: center;
     background-color: var(--project-card-bg);
-    border-radius: 20px;
+    border-radius: 17px;
   }
 
   a {
