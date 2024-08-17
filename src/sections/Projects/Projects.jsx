@@ -9,6 +9,7 @@ import wet from '../../assets/weatherapp.png'
 import box from '../../assets/boxjumping.png'
 import D from '../../assets/3dwebgame.png'
 import dsa from '../../assets/dsa.png'
+import tetris from '../../assets/tetris.png'
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
@@ -54,6 +55,12 @@ function Projects() {
           src={dsa}
           link="https://github.com/HotShot003/Data-Structure-Practice-Questions"
           h3="DSA-Practice-Questions"
+          p=""
+        />
+        <ProjectCard
+          src={tetris}
+          link="https://github.com/HotShot003/Tetris-Game"
+          h3="Tetris Game"
           p=""
         />
       </div>
