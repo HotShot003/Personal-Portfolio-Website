@@ -49,18 +49,5 @@ Check out the live demo of my personal portfolio website:
 
 [![Live Demo](https://img.shields.io/badge/LiveDemo%20-%23276DC3.svg?&style=for-the-badge&logo=&logoColor=white)](https://anuragpadhiyar-portfolio-website03.netlify.app/) 
 
-## Contributing
-
-I welcome contributions to the Personal Portfolio Website project! 
-
-If you would like to contribute, please fork the repository and submit a pull request.
-
-## Special Thanks
-
-I would like to extend my heartfelt thanks to [Unified Mentor](https://www.linkedin.com/company/unifiedmentor/posts/?feedView=all) for providing the opportunity and support for this internship project. 
-
-Additionally, thank you to all future contributors who dedicate their time and effort to improving this project.
-
----
 
 Thank you for visiting my portfolio website project. I hope you find it informative and engaging!
