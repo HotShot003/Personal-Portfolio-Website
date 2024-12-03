@@ -33,15 +33,6 @@ This includes sections for an introduction, an about me page, a project showcase
 - **Showcase Projects**: Display a portfolio of projects with descriptions, images, and links to live demos and source code.
   
 - **Contact Form**: Implement a contact form for visitors to get in touch with me.
-  
-## Unified Mentor
-
-This project is conducted as part of an internship program provided by [Unified Mentor](https://www.linkedin.com/company/unifiedmentor/posts/?feedView=all).
-
-As an intern, I have received mentorship and guidance from experienced industry professionals and skilled student mentors. 
-
-This mentorship aims to support my growth in web development, providing valuable insights and feedback throughout the project lifecycle.
-
 
 ## Live Demo 
 
