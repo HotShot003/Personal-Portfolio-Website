@@ -1,10 +1,9 @@
-/* HeroStyles.module.css */
-
+/* Existing styles */
 .typicalText {
   font-weight: bold;
-  font-size: 32px; /* Adjust the font size if needed */
+  font-size: 32px;
   line-height: 1.5;
-  transition: all 0.5s ease; /* Smooth transition */
+  transition: all 0.5s ease;
 }
 
 .container {
@@ -50,11 +49,13 @@ button {
   font-size: 20px;
   font-weight: bold;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  transition: all 200ms ease-in-out; /* Updated to include all properties */
 }
 
 button:hover {
   transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  background-color: var(--btn-hover-color, color-mix(in srgb, var(--btn-color) 80%, black)); /* Darker shade for hover */
 }
 
 button:active {
@@ -91,9 +92,18 @@ button:active {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  align-items: center; /* Center align items */
+  align-items: center;
 }
 
+/* Added button container styling */
+.buttonContainer {
+  display: flex;
+  gap: 1.5rem; /* Spacing between buttons */
+  justify-content: center; /* Center buttons horizontally */
+  margin-top: 1rem; /* Space above buttons */
+}
+
+/* Media Queries */
 @media (min-width: 800px) {
   .container {
     flex-direction: row-reverse;
@@ -115,5 +125,17 @@ button:active {
 
   .description {
     max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .buttonContainer {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    gap: 1rem;
+  }
+
+  button {
+    width: 100%; /* Full-width buttons on mobile */
+    max-width: 200px; /* Optional: Limit max width */
   }
 }

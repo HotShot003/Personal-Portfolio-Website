@@ -12,6 +12,7 @@ import githubDark from "../../assets/github-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
 import CV from "../../assets/cv.pdf";
+import certificate from "../../assets/certificate.pdf";
 import leetlight from '../../assets/leetcode-light.svg';
 import leetdark from '../../assets/leetcode-dark.svg';
 import { useTheme } from "../../common/ThemeContext";
@@ -74,7 +75,6 @@ function Hero() {
           >
             <img src={linkedinIcon} alt="LinkedIn profile link" />
           </a>
-
           <a
             href="https://leetcode.com/u/HotShotx003/"
             target="_blank"
@@ -87,9 +87,14 @@ function Hero() {
           I am passionate about learning new things and exploring more into technologies. I love coding in Python.
         </p>
         <br />
-        <a href={CV} download>
-          <button className='hover'>Resume</button>
-        </a>
+        <div className={styles.buttonContainer}>
+          <a href={CV} target="_blank" rel="noopener noreferrer">
+            <button className={styles.button}>View Resume</button>
+          </a>
+          <a href={certificate} target="_blank" rel="noopener noreferrer">
+            <button className={styles.button}>View Certificate</button>
+          </a>
+        </div>
       </div>
     </section>
   );
